@@ -14,4 +14,9 @@
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
+  config.env = config.env || {};
+
+  console.log('config', config);
+
+  config.env.secret = 'Be good';
 }
