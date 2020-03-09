@@ -19,4 +19,6 @@ module.exports = (on, config) => {
   console.log('config', config);
 
   config.env.secret = 'Be good';
+
+  return config;
 }
